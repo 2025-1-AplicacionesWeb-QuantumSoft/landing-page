@@ -1,0 +1,13 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import "tailwindcss";
+:root {
+  --primary-darker: #4c5d8b;
+  --primary-light: #fef6e4;
+  --primary-medium: #f3d2c1;
+  --blue: #172c66;
+  --purple-dark: #001858;
+  --pink: #f582ae;
+  --skyblue: #8bd3dd;
+}
+
+
