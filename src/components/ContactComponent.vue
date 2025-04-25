@@ -3,53 +3,191 @@
 </script>
 
 <template>
-  <section id="contact" class="w-full py-16 bg-gray-50">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8">Contáctanos</h2>
+  <div class="contact-section">
+    <div class="contact-container">
+      <div class="contact-image">
+        <img src="@/assets/image7.jpg" alt="Nanny reading with children"/>
+      </div>
+      <div class="contact-form">
+        <h4>Connect</h4>
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you. Reach out!</p>
 
-      <div class="bg-white shadow-lg rounded-2xl p-8 space-y-8">
-        <div class="flex items-center space-x-4">
-          <div>
-            <h3 class="text-xl font-semibold">¿Tienes preguntas?</h3>
-            <p class="text-gray-600 text-sm max-w-md">Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-          </div>
-        </div>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name" />
 
-        <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Nombre</label>
-            <input type="text" placeholder="Tu nombre" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your email" />
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Apellido</label>
-            <input type="text" placeholder="Tu apellido" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          </div>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Type your message..."></textarea>
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Correo electrónico</label>
-            <input type="email" placeholder="ejemplo@correo.com" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <div class="terms">
+            <input type="checkbox" id="terms" />
+            <label for="terms">I accept the Terms</label>
           </div>
 
-          <div>
-            <label class="block text-sm font-medium text-gray-700">Teléfono</label>
-            <input type="text" placeholder="+51 999 999 999" class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          </div>
-
-          <div class="md:col-span-2">
-            <label class="block text-sm font-medium text-gray-700">Mensaje</label>
-            <textarea rows="4" placeholder="Escribe tu mensaje aquí..." class="mt-1 w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-          </div>
+          <button type="submit">Submit</button>
         </form>
-
-        <div class="flex justify-end space-x-4 pt-4">
-          <button class="bg-[var(--primary-darker)] text-white px-6 py-2 rounded-lg hover:bg-[var(primary-light)] transition">Enviar</button>
-          <button type="reset" class="text-gray-600 hover:underline">Cancelar</button>
-        </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <style scoped>
+.contact-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.contact-container {
+  background-color: #cc6b8e;
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+  max-height: 500px;
+}
+
+.contact-image {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 40px;
+  background-color: #cc6b8e;
+  color: white;
+}
+
+.contact-form h4 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contact-form h2 {
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.contact-form p {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #f0e6ec;
+}
+
+.contact-form label {
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: block;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e99ab5;
+  color: #333;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.terms input {
+  margin-right: 10px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #eee;
+}
+
+footer {
+  background-color: #8b9bb7;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-top div {
+  margin: 10px 20px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #d1d9e6;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
 </style>

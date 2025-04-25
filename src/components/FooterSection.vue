@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="bg-[var(--green-light)] text-gray-600 pt-10 pb-5 px-6">
+  <footer class="bg-[var(--primary-darker)] text-[var(--primary-light)] pt-10 pb-5 px-6">
     <div class="max-w-[1700px] mx-auto mb-22 flex flex-col md:flex-row justify-between items-center gap-8">
       <img class="w-35" src="@/assets/logo.png" alt="logo-image">
       <div>
