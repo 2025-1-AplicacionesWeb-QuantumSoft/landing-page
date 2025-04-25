@@ -15,7 +15,7 @@
 
 
         <div class="hidden md:flex space-x-6">
-          <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Features</a>
+          <a href="../views/CharacterView.vue" class="text-gray-700 hover:text-[var(--pink)]">Features</a>
           <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Benefits</a>
           <a href="#" class="text-gray-700 hover:text-[var(--pink)]">How It Works</a>
           <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Testimonial</a>
