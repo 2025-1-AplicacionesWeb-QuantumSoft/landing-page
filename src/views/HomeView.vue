@@ -5,6 +5,7 @@ import ContactComponent from "@/components/ContactComponent.vue";
 import TestimonialSection from "@/components/TestimonialSection.vue";
 import FooterSection from "@/components/FooterSection.vue";
 import CharacterView from "@/views/CharacterView.vue";
+import VideoSection from "@/components/VideoSection.vue";
 </script>
 
 <template >
@@ -13,6 +14,7 @@ import CharacterView from "@/views/CharacterView.vue";
   <character-view/>
   <testimonial-section/>
   <contact-component/>
+  <video-section/>
   <footer-section/>
 </template>
 

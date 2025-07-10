@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
+  <section id="features" class="bg-white py-16 px-4 sm:px-6 lg:px-8 scroll-mt-30">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16">
         <h1 class="text-4xl font-bold text-indigo-600 mb-4">Connect</h1>

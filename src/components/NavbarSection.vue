@@ -15,15 +15,15 @@
 
 
         <div class="hidden md:flex space-x-6">
-          <a href="../views/CharacterView.vue" class="text-gray-700 hover:text-[var(--pink)]">Features</a>
+          <a href="#features" class="text-gray-700 hover:text-[var(--pink)]">Features</a>
           <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Benefits</a>
           <a href="#" class="text-gray-700 hover:text-[var(--pink)]">How It Works</a>
-          <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Testimonial</a>
-          <a href="#" class="text-gray-700 hover:text-[var(--pink)]">Contact</a>
+          <a href="#testimonial" class="text-gray-700 hover:text-[var(--pink)]">Testimonial</a>
+          <a href="#contact" class="text-gray-700 hover:text-[var(--pink)]">Contact</a>
         </div>
 
         <div class="hidden md:flex">
-          <a href="#" class="bg-[var(--primary-darker)] text-white px-4 py-2 rounded hover:bg-[var(--pink)]">Log In</a>
+          <a href="https://frontend-appweb.onrender.com" class="bg-[var(--primary-darker)] text-white px-4 py-2 rounded hover:bg-[var(--pink)]">Log In</a>
         </div>
 
       </div>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="testimonials-section">
+  <section id="testimonial" class="bg-[var(--primary-medium)] testimonials-section scroll-mt-30">
     <h2>Testimonios</h2>
     <p>Escucha lo que dicen nuestros padres y niñeras satisfechos</p>
     <div class="grid">
@@ -43,7 +43,6 @@
 <style scoped>
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #2f3e74;
   margin: 0;
   color: white;
 }
@@ -61,7 +60,7 @@ body {
 .testimonials-section p {
   font-size: 18px;
   margin-bottom: 40px;
-  color: #bfc7e0;
+  color: #1a1b1d;
 }
 
 .grid {

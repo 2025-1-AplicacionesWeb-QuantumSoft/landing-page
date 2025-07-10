@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="contact-section">
+  <div id="contact" class="contact-section scroll-mt-30">
     <div class="contact-container">
       <div class="contact-image">
         <img src="@/assets/image7.jpg" alt="Nanny reading with children"/>
